@@ -5,7 +5,7 @@ import { AppContext } from "../context/AppContext";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-// 2 : 45 : 02
+
 const Navbar = () => {
   const navigate = useNavigate();
   const { userData, backendUrl, setUserData, setLoggedin } =
@@ -41,7 +41,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full flex justify-between items-center p-4 sm:p-6 sm:px-24 absolute top-0">
-      <img src={assets.logo} alt="" className="w-28 sm:w-32" />
+      <img src={assets.logo_icon} alt="" className="w-28 sm:w-32" />
       {userData ? (
         <div className="w-8 h-8 flex justify-center items-center rounded-full bg-black text-white relative group">
           {userData?.firstName[0].toUpperCase()}
@@ -52,6 +52,7 @@ const Navbar = () => {
                   Verify Email
                 </li>
               )}
+              <li onClick={() => navigate("/profile")} className="py-1 px-2 hover:bg-gray-200 cursor-pointer">Profile</li>
 
               <li onClick={logout} className="py-1 px-2 hover:bg-gray-200 cursor-pointer">
                 Logout

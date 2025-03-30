@@ -88,7 +88,7 @@ const Login = () => {
     <div className="flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-0 bg-gradient-to-br from-blue-200 to-purple-400">
       <img
         onClick={() => navigate("/")}
-        src={assets.logo}
+        src={assets.logo_icon}
         alt="Website Logo"
         className="absolute left-4 top-4 w-20 sm:left-8 sm:top-6 sm:w-28 lg:w-32 cursor-pointer"
       />

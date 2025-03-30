@@ -6,6 +6,8 @@ import person_icon from './person_icon.svg'
 import hand_wave from './hand_wave.png'
 import header_img from './header_img.png'
 import call_icon from './call.svg'
+import logo_icon from "./logo.png"
+import profile_placeholder from "./boy.png"
 
 export const assets = {
     arrow_icon,
@@ -15,5 +17,7 @@ export const assets = {
     person_icon,
     hand_wave,
     header_img,
-    call_icon
+    call_icon,
+    logo_icon,
+    profile_placeholder
 }

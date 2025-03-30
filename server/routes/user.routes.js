@@ -6,6 +6,7 @@ import userAuth from "../middlewares/userAuth.js";
 const router = express.Router();
 
 router.put("/upload-profile-picture", userAuth, upload.single("profilePicture"), uploadProfilePicture);
+
 router.put("/update-profile", userAuth, updateUserProfile);
 
 router.get("/data", userAuth, getUserData);

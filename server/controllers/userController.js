@@ -14,7 +14,11 @@ export const uploadProfilePicture = async (req, res) => {
       return res.status(400).json({ message: "No file uploaded" });
     }
 
+    console.log(userId);
+    
     const user = await User.findById(userId);
+    
+    
     if (!user) {
       return res.status(404).json({ message: "User not found" });
     }
